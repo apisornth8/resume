@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <title>APISORN TEEHOR</title>
 
     <meta charset="UTF-8">
@@ -11,7 +10,7 @@
     <meta name="author" content="Tooplate">
     <meta name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM Plex Sans Thai">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -21,6 +20,9 @@
       href='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css'>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <style>
+      body,div,h1,h2,h3,h4,h5,h6,p,button,b {
+        font-family: 'IBM Plex Sans Thai', serif;
+      }
       b {
           box-shadow: inset 0 0 0 0 #54b3d6;
           color: #54b3d6;
@@ -38,7 +40,7 @@
       /* Presentational styles */
       b {
           color: #54b3d6;
-          font-family: 'Poppins', sans-serif;
+          font-family: 'IBM Plex Sans Thai', sans-serif;
           font-size: 27px;
           font-weight: 600;
           line-height: 1.5;
@@ -47,6 +49,20 @@
         .card-container { 
           margin: 50px;
         }
+      #rt{
+        width:fit-content;
+        color: rgb(255, 255, 255);
+        border-radius: 20px;
+        background-color: rgb(238, 46, 46);
+        padding: 10px;
+      }
+      #boxr{
+        width:fit-content;
+        color: rgb(255, 255, 255);
+        border-radius: 20px;
+        background: linear-gradient(90deg, rgba(255,181,0,1) 0%, rgba(196,137,50,1) 100%);
+        padding: 10px;
+      }
       </style>
 
     <!-- MAIN CSS -->
@@ -71,7 +87,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav"
-          style="position: absolute;right: 0px;width: 600px;">
+          style="position: fixed;right: 0px;width: 600px;">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a href="#intro" class="nav-link smoothScroll">Introduction</a>
@@ -96,15 +112,12 @@
     </nav>
 
     <!-- HERO -->
-    <section
-      class="hero d-flex flex-column justify-content-center align-items-center"
-      id="intro">
-
+    <section class="hero d-flex flex-column justify-content-center align-items-center" style="margin-top: 120px;" id="intro">
       <div class="container">
         <div class="row">
 
           <div class="mx-auto col-lg-5 col-md-5 col-10 mt-2">
-            <img src="images/zone02.JPG" class="img-fluid" alt="Zone Resume">
+            <img src="images/zone02.JPG" class="about-image img-fluid" alt="Zone Resume">
           </div>
 
           <div
@@ -129,22 +142,27 @@
         <div class="row">
 
           <div class="col-lg-6 col-md-6 col-12">
-            <h3 class="mb-4">I'm Apisorn !</h3>
+              <h3 class="mb-4" id="rt"> I'm Apisorn !</h3>
             <ul class="mt-4 mb-5 mb-lg-0 profile-list list-unstyled">
+                <p>I'm interested in Front-End development, and I'm a student at
+                  the Faculty of Information Technology at King Mongkut's
+                  Institute of
+                  Technology Ladkrabang</p>
+              <li><strong>Full Name :</strong> Mr.Apisorn Teehor </li>
 
-              <p>I'm interested in Front-End development, and I'm a student at
-                the Faculty of Information Technology at King Mongkut's
-                Institute of
-                Technology Ladkrabang</p>
-              <li><strong>Full Name :</strong> Apisorn Teehor </li>
-
-              <li><strong>Nick Name :</strong> Zoneney </li>
+              <li><strong>Nick Name :</strong> Zone </li>
 
               <li><strong>Date of Birth:</strong> 08 Febuary 2001</li>
 
-              <li><strong>Age :</strong> 22</li>
+              <li><strong>Age/Gender :</strong> 22/Male</li>
 
               <li><strong>Email :</strong> apisornth8@gmail.com</li>
+
+              <li><strong>University :</strong> King Mongkut's Institute of Technology Ladkrabang</li>
+              
+              <li><strong>Faculty :</strong> Information Technology</li>
+
+              <li><strong>Field in Faculty :</strong> Software Engineering</li>
 
               <li><strong>Life Quotes :</strong> IT'S NOT OVER UNTIL I WIN
                 !</li>
@@ -152,61 +170,90 @@
           </div>
 
           <div class="col-lg-5 mx-auto col-md-6 col-12">
-            <img src="images/zone01.JPG" class="about-image img-fluid"
-              alt="Zone Portfolio">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="images/zone01.JPG" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="images/zone02.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="images/zone04.JPG" alt="Fourth slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="images/zone05.JPG" alt="Fifth slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="images/zone06.JPG" alt="Sixth slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="images/zone08.JPG" alt="Eighth slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="row about-third achive section-padding" style="font-family: 'Poppins', sans-serif;font-size: 20px;font-weight: 600;">
-          <div class="col-12">
+        <div class="row about-third achive section-padding" style="padding: 4rem;">
+          <div id="boxr" class="col-12">
             <a style="text-align: center;">
               <h3>ACHIEVEMENTS</h3></a>
           </div>
-          <div class="col-lg-6 col-md-4 col-12 mt-5">
+          <div class="col-12 mt-5">
             <h3>SOCCER SHOP ONLINE</h3>
             <!-- picture slide -->
             <div id="carouselExampleIndicators" class="carousel slide"
               data-ride="carousel">
               <ol class="carousel-indicators">
-                <li data-slide-to="0" class="active"></li>
-                <li data-slide-to="1"></li>
+                <li data-slide-to="First slide" class="active"></li>
+                <li data-slide-to="1" class="active"></li>
                 <li data-slide-to="2"></li>
+                <li data-slide-to="3"></li>
+                <li data-slide-to="4"></li>
+                <li data-slide-to="5"></li>
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img class="d-block w-100" src="images/shirt_01.png"
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/shirt_01.png"
                     alt="First slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/shirt_02.png"
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/shirt_02.png"
                     alt="Third slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/shirt_03.png"
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/shirt_03.png"
                     alt="fourth slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/shirt_04.png"
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/shirt_04.png"
                     alt="fifth slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/shirt_05.png"
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/shirt_05.png"
                     alt="sixth slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/shirt_06.jpeg"
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/shirt_06.jpeg"
                     alt="seventh slide">
                 </div>
               </div>
-              <a class="carousel-control-prev" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon"
-                  aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" role="button" data-slide="next">
-                <span class="carousel-control-next-icon"
-                  aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
             </div>
             <p>Web Application Manage Shirt Soccer Online
               Store. User Can Manage Products View Products
@@ -216,60 +263,52 @@
               href="https://github.com/apisornth8/Project-ShirtSoccerOnline.git"
               role="button">GitHub</a>
           </div>
-          <div class="col-lg-6 col-md-4 col-12 mt-5">
+          <div class="class = col-12 mt-5">
             <h3>MANAGE DOCUMENTS</h3>
             <!-- picture slide -->
             <div id="carouselExampleIndicators" class="carousel slide"
               data-ride="carousel">
               <ol class="carousel-indicators">
-                <li data-slide-to="0" class="active"></li>
-                <li data-slide-to="1"></li>
+                <li data-slide-to="1" class="active"></li>
                 <li data-slide-to="2"></li>
+                <li data-slide-to="3"></li>
+                <li data-slide-to="4"></li>
+                <li data-slide-to="5"></li>
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img class="d-block w-100" src="images/mdoc_01.png"
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/mdoc_01.png"
                     alt="First slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/mdoc_02.png"
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/mdoc_02.png"
                     alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/mdoc_03.png"
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/mdoc_03.png"
                     alt="Third slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/mdoc_04.png"
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/mdoc_04.png"
                     alt="Third slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/mdoc_05.png"
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/mdoc_05.png"
                     alt="Third slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/mdoc_06.png"
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/mdoc_06.png"
                     alt="Third slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/mdoc_07.png"
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/mdoc_07.png"
                     alt="Third slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/mdoc_08.png"
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/mdoc_08.png"
                     alt="Third slide">
                 </div>
               </div>
-              <a class="carousel-control-prev" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon"
-                  aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" role="button" data-slide="next">
-                <span class="carousel-control-next-icon"
-                  aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
             </div>
             <p>Mockup (Only Front-End) Web Application for
               Manage Documents Government agencies e.g.
@@ -278,128 +317,120 @@
               href="https://github.com/apisornth8/Project-Manage-Documents.git"
               role="button">GitHub</a>
           </div>
-          <div class="col-lg-6 col-md-4 col-12 mt-5">
+          <div class="class = col-12 mt-5">
             <h3>MOBILE APP DEKENG</h3>
             <!-- picture slide -->
             <div id="carouselExampleIndicators" class="carousel slide"
               data-ride="carousel">
               <ol class="carousel-indicators">
-                <li data-slide-to="0" class="active"></li>
-                <li data-slide-to="1"></li>
+                <li data-slide-to="1" class="active"></li>
                 <li data-slide-to="2"></li>
+                <li data-slide-to="3"></li>
+                <li data-slide-to="4"></li>
+                <li data-slide-to="5"></li>
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img class="d-block w-50 h-50"
+                  <img  class="d-block w-50 h-50"
                     style="display: block; margin-left: auto; margin-right: auto; width: 40%;"
                     src="images/dekeng/dekeng01.jpg" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-50 h-50"
+                  <img  class="d-block w-50 h-50"
                     style="display: block; margin-left: auto; margin-right: auto; width: 40%;"
                     src="images/dekeng/dekeng02.jpg" alt="sec slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-50 h-50"
+                  <img  class="d-block w-50 h-50"
                     style="display: block; margin-left: auto; margin-right: auto; width: 40%;"
                     src="images/dekeng/dekeng03.jpg">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-50 h-50"
+                  <img  class="d-block w-50 h-50"
                     style="display: block; margin-left: auto; margin-right: auto; width: 40%;"
                     src="images/dekeng/dekeng04.jpg">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-50 h-50"
+                  <img  class="d-block w-50 h-50"
                     style="display: block; margin-left: auto; margin-right: auto; width: 40%;"
                     src="images/dekeng/dekeng05.jpg">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-50 h-50"
+                  <img  class="d-block w-50 h-50"
                     style="display: block; margin-left: auto; margin-right: auto; width: 40%;"
                     src="images/dekeng/dekeng06.jpg">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-50 h-50"
+                  <img  class="d-block w-50 h-50"
                     style="display: block; margin-left: auto; margin-right: auto; width: 40%;"
                     src="images/dekeng/dekeng07.jpg">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-50 h-50"
+                  <img  class="d-block w-50 h-50"
                     style="display: block; margin-left: auto; margin-right: auto; width: 40%;"
                     src="images/dekeng/dekeng08.jpg">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-50 h-50"
+                  <img  class="d-block w-50 h-50"
                     style="display: block; margin-left: auto; margin-right: auto; width: 40%;"
                     src="images/dekeng/dekeng09.jpg">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-50 h-50"
+                  <img  class="d-block w-50 h-50"
                     style="display: block; margin-left: auto; margin-right: auto; width: 40%;"
                     src="images/dekeng/dekeng10.jpg">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-50 h-50"
+                  <img  class="d-block w-50 h-50"
                     style="display: block; margin-left: auto; margin-right: auto; width: 40%;"
                     src="images/dekeng/dekeng11.jpg">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-50 h-50"
+                  <img  class="d-block w-50 h-50"
                     style="display: block; margin-left: auto; margin-right: auto; width: 40%;"
                     src="images/dekeng/dekeng12.jpg">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-50 h-50"
+                  <img  class="d-block w-50 h-50"
                     style="display: block; margin-left: auto; margin-right: auto; width: 40%;"
                     src="images/dekeng/dekeng13.jpg">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-50 h-50"
+                  <img  class="d-block w-50 h-50"
                     style="display: block; margin-left: auto; margin-right: auto; width: 40%;"
                     src="images/dekeng/dekeng14.jpg">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-50 h-50"
+                  <img  class="d-block w-50 h-50"
                     style="display: block; margin-left: auto; margin-right: auto; width: 40%;"
                     src="images/dekeng/dekeng15.jpg">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-50 h-50"
+                  <img  class="d-block w-50 h-50"
                     style="display: block; margin-left: auto; margin-right: auto; width: 40%;"
                     src="images/dekeng/dekeng16.jpg">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-50 h-50"
+                  <img  class="d-block w-50 h-50"
                     style="display: block; margin-left: auto; margin-right: auto; width: 40%;"
                     src="images/dekeng/dekeng17.jpg">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-50 h-50"
+                  <img  class="d-block w-50 h-50"
                     style="display: block; margin-left: auto; margin-right: auto; width: 40%;"
                     src="images/dekeng/dekeng18.jpg">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-50 h-50"
+                  <img  class="d-block w-50 h-50"
                     style="display: block; margin-left: auto; margin-right: auto; width: 40%;"
                     src="images/dekeng/dekeng19.jpg">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-50 h-50"
+                  <img  class="d-block w-50 h-50"
                     style="display: block; margin-left: auto; margin-right: auto; width: 40%;"
                     src="images/dekeng/dekeng20.jpg">
                 </div>
               </div>
-              <a class="carousel-control-prev" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon"
-                  aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" role="button" data-slide="next">
-                <span class="carousel-control-next-icon"
-                  aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
             </div>
             <p>Mobile Application vocabulary for Kindergarten to
               early elementary school students and teachers
@@ -409,48 +440,40 @@
               href="https://github.com/apisornth8/Project-DekEng.git"
               role="button">GitHub</a>
           </div>
-          <div class="col-lg-6 col-md-4 col-12 mt-5">
+          <div class="class = col-12 mt-5">
             <h3>MANAGE BILS STREAMING</h3>
             <!-- picture slide -->
             <div id="carouselExampleIndicators" class="carousel slide"
               data-ride="carousel">
               <ol class="carousel-indicators">
-                <li data-slide-to="0" class="active"></li>
-                <li data-slide-to="1"></li>
+                <li data-slide-to="1" class="active"></li>
                 <li data-slide-to="2"></li>
+                <li data-slide-to="3"></li>
+                <li data-slide-to="4"></li>
+                <li data-slide-to="5"></li>
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img class="d-block w-100 h-100"
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100 h-100"
                     style="height: 100%; width: 100%;"
                     src="images/paybill01.jpg" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100 h-100"
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100 h-100"
                     style="height: 100%; width: 100%;"
                     src="images/paybill02.png" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100 h-100"
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100 h-100"
                     style="height: 100%; width: 100%;"
                     src="images/paybill03.jpg" alt="Third slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100 h-100"
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100 h-100"
                     style="height: 100%; width: 100%;"
                     src="images/paybill04.jpg" alt="fourth slide">
                 </div>
               </div>
-              <a class="carousel-control-prev" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon"
-                  aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" role="button" data-slide="next">
-                <span class="carousel-control-next-icon"
-                  aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
             </div>
             <p>Mockup (Only Front-End) Web Application Name: "PAYPAI" It helps
               manage bill payments for all streaming, e.g. Netflix HBO
@@ -459,83 +482,75 @@
               href="https://github.com/apisornth8/Project-PAYPAI.git"
               role="button">GitHub</a>
           </div>
-          <div class="col-lg-6 col-md-4 col-12 mt-5">
+          <div class="class = col-12 mt-5">
             <h3>Senior Project</h3>
             <!-- picture slide -->
             <div id="carouselExampleIndicators" class="carousel slide"
               data-ride="carousel">
               <ol class="carousel-indicators">
-                <li data-slide-to="0" class="active"></li>
-                <li data-slide-to="1"></li>
+                <li data-slide-to="1" class="active"></li>
                 <li data-slide-to="2"></li>
+                <li data-slide-to="3"></li>
+                <li data-slide-to="4"></li>
+                <li data-slide-to="5"></li>
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img class="d-block w-100" src="images/bill/bill1.png"
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/bill/bill1.png"
                     alt="First slide">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/bill/bill2.png">
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/bill/bill2.png">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/bill/bill3.png">
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/bill/bill3.png">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/bill/bill4.png">
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/bill/bill4.png">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/bill/bill5.png">
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/bill/bill5.png">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/bill/bill6.png">
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/bill/bill6.png">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/bill/bill7.png">
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/bill/bill7.png">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/bill/bill8.png">
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/bill/bill8.png">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/bill/bill9.png">
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/bill/bill9.png">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/bill/bill10.png">
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/bill/bill10.png">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/bill/bill11.png">
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/bill/bill11.png">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/bill/bill12.png">
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/bill/bill12.png">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/bill/bill13.png">
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/bill/bill13.png">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/bill/bill14.png">
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/bill/bill14.png">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/bill/bill16.png">
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/bill/bill16.png">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/bill/bill17.png">
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/bill/bill17.png">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/bill/bill18.png">
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/bill/bill18.png">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="images/bill/bill25.png">
+                  <img style="background-size: contain;width: 100%; height: 100%;" class="d-block w-100" src="images/bill/bill25.png">
                 </div>
               </div>
-              <a class="carousel-control-prev" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon"
-                  aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" role="button" data-slide="next">
-                <span class="carousel-control-next-icon"
-                  aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
             </div>
             <p>The development of the Bitmap Intersection Lookup (BIL) algorithm
               is a segmented task to reduce the amount of memory used and the
@@ -557,70 +572,23 @@
     <section class="computerskills section-padding" id="computerskills">
       <div class="container">
         <div class="row">
-
           <div class="col-12">
-            <h2 class="mb-5 text-center" style="font-family: 'Poppins', sans-serif;
-            font-size: 27px;
-            font-weight: 600;">COMPUTER SKILL</h2>
-
-            <div class="owl-carousel owl-theme" id="testimonials-carousel">
-              <div class="item">
-                <div class="testimonials-thumb d-flex">
-                  <div class="testimonials-image">
-                    <img src="images/logo-html.webp"
-                      class="img-fluid" alt="testimonials image">
+            <h2 class="mb-5 text-center">COMPUTER SKILL</h2>
+                <div style="align-items: center;padding: 20px;">
+                    <img style="height: 20vh; background-size: contain;padding: 20px;display:inline-block;margin-left: 30px;margin-right: 20px;" src="images/logo-html.webp"
+                      class="img-fluid" alt="testimonials image"> HTML
+                    <img style="height: 20vh; background-size: contain;padding: 20px;display:inline-block;margin-left: 30px;margin-right: 20px;" src="images/css.png"
+                      class="img-fluid" alt="testimonials image"> CSS
+                    <img style="height: 20vh; background-size: contain;padding: 20px;display:inline-block;margin-left: 30px;margin-right: 20px;" src="images/Javascript_badge.png"
+                      class="img-fluid" alt="testimonials image"> JAVASCRIPT
+                    <img style="height: 20vh; background-size: contain;padding: 20px;display:inline-block;margin-left: 30px;margin-right: 20px;" src="images/vue.png"
+                      class="img-fluid" alt="testimonials image"> VUE.JS
+                    <img style="height: 20vh; background-size: contain;padding: 20px;display:inline-block;margin-left: 30px;margin-right: 20px;" src="images/python.png"
+                      class="img-fluid" alt="testimonials image"> PYTHON
+                    <img style="height: 20vh; background-size: contain;padding: 20px;display:inline-block;margin-left: 30px;margin-right: 20px;" src="images/react-native-logo.png"
+                      class="img-fluid" alt="testimonials image"> REACT NATIVE
                   </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="testimonials-thumb d-flex">
-                  <div class="testimonials-image">
-                    <img src="images/css.png"
-                      class="img-fluid" alt="testimonials image">
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="testimonials-thumb d-flex">
-                  <div class="testimonials-image">
-                    <img src="images/Javascript_badge.png"
-                      class="img-fluid" alt="testimonials image">
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="testimonials-thumb d-flex">
-                  <div class="testimonials-image">
-                    <img src="images/vue.png"
-                      class="img-fluid" alt="testimonials image">
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="testimonials-thumb d-flex">
-                  <div class="testimonials-image">
-                    <img src="images/python.png"
-                      class="img-fluid" alt="testimonials image">
-                  </div>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="testimonials-thumb d-flex">
-                  <div class="testimonials-image">
-                    <img src="images/react-native-logo.png"
-                      class="img-fluid" alt="testimonials image">
-                  </div>
-                </div>
-              </div>
-
-            </div>
           </div>
-
         </div>
       </div>
     </section>
